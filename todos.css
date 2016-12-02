@@ -1,0 +1,54 @@
+/* CSS declarations go here */
+body{
+  margin:80px;
+  padding:0px;}
+
+
+[name=todoItem]{
+    border:none;
+    font-family: "Times New Roman";
+    font-size: 100%;
+    padding:0.15em;
+}
+[name=todoItem]:hover{
+
+    background-color: #f9f9f9;
+    cursor:pointer;
+}
+
+[name=todoItem]:focus:{
+    background-color: #f9f9f9;
+    cursor:default;
+    outline:none;
+}
+ul{
+  list-style-type: none;
+}
+/* CSS declarations go here */
+h4{
+  display:inline-block;
+}
+.fa-user-circle-o{
+  color:lightgreen;
+}
+.fa-trash-o{
+  color:red;
+}
+.checked{
+    background-color:#f0f0f0;
+    color:#666;
+}
+
+.checked [name=todoItem]{
+    text-decoration: line-through;
+}
+
+.checked [name=todoItem],
+.checked [name=todoItem]:hover,
+.checked [name=todoItem]:focus{
+    background-color:#f0f0f0;
+}
+
+input.error{
+    background-color:rgb(255, 231, 231);
+}
